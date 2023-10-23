@@ -22,8 +22,11 @@ void loop() {
     case 3:
       led.on(64, 64, 64);
       break;
+    case 5:
+      led.wheel(255);
+      break;
   }
 
-  state = ++state % 4;
+  state = ++state % 5;
   delay(1000);
 }
